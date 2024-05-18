@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
+    "es2020": true,
     "node": true
   },
   "extends": [
@@ -19,36 +19,20 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js"],
+        "extensions": [".ts"],
         "moduleDirectory": ["node_modules", "src/"]
       }
     }
   },
+  "parser": "@typescript-eslint/parser",
   "ignorePatterns": ["**/*.html"],
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
 
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 80,
-        "tabWidth": 2,
-        "useTabs": false,
-        "semi": true,
-        "singleQuote": true,
-        "jsxSingleQuote": true,
-        "trailingComma": "none",
-        "bracketSpacing": true,
-        "bracketSameLine": false,
-        "arrowParens": "always",
-        "endOfLine": "crlf"
-      }
-    ],
 
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
