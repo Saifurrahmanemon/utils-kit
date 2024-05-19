@@ -1,4 +1,5 @@
 import { describe, expect, test } from 'vitest';
+
 import clsx from '../src/utils/clsx';
 
 describe('clsx', () => {

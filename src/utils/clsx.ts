@@ -38,6 +38,12 @@ type ClassValue =
   | undefined;
 export type ClassArray = Array<ClassValue>;
 
+/**
+ * Concatenates class names and returns a string.
+ *
+ * @param {Array<ClassValue>} args - An array of class values to concatenate.
+ * @return {string} - The concatenated class names.
+ */
 export default function clsx(...args: Array<ClassValue>): string {
   const classes: Set<string> = new Set();
 
