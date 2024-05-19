@@ -35,7 +35,10 @@
   },
   "lint-staged": {
     "src/**/*.{ts}": [
-      "eslint --fix"
+      "pnpm lint",
+      "pnpm format",
+      "pnpm test"
+
     ]
   },
   "husky": {
