@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 /**
- * inspiration from  - https://github.com/leerob/leerob.io/blob/9566a4fe599a3a24b9264420ea2490f28e921887/app/db/blog.ts
+ * inspiration - https://github.com/leerob/leerob.io/blob/9566a4fe599a3a24b9264420ea2490f28e921887/app/db/blog.ts
  * MDX Utils: Load, Parse, and Extract Data from MDX Files
  *
  * This module provides functions to read, parse, and extract metadata and content

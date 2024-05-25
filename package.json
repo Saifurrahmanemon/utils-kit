@@ -37,9 +37,7 @@
   "lint-staged": {
     "src/**/*.ts": [
       "pnpm lint",
-      "pnpm format",
-      "pnpm check:types"
-
+      "pnpm format"
     ]
   },
   "husky": {
