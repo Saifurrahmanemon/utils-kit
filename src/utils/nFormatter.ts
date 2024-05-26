@@ -53,5 +53,5 @@ export function nFormatter(
     );
   }
 
-  return '0';
+  return '0'; // doesn't work for negative numbers
 }
