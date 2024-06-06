@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "extends": ["@repo/eslint-config/index.js"],
+  "plugins": ["prettier", "import", "simple-import-sort", "promise"],
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-types": "off"
+  },
+  "ignorePatterns": ["dist/**"]
+}
