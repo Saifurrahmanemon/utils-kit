@@ -1,6 +1,6 @@
 {
-  "name": "utils-kit",
-  "version": "1.0.0",
+  "name": "utils-kit-cli",
+  "version": "0.0.0",
   "description": "Add reusable utils to your project",
   "main": "index.js",
   "publishConfig": {
@@ -20,11 +20,7 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "start": "node dist/index.js",
-    "clean": "rimraf dist",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "eslint \"src/**/*.ts\"",
-    "pub:release": "pnpm build && pnpm publish --access public",
-    "changeset": "changeset"
+    "clean": "rimraf dist"
   },
   "keywords": [
     "cli",
