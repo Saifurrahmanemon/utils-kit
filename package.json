@@ -1,4 +1,5 @@
 {
+
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -26,5 +27,5 @@
     "vitest": "^1.6.0"
   },
   "packageManager": "pnpm@8.15.6",
-  "name": "utils"
+  "name": "utils-kit"
 }
