@@ -1,6 +1,6 @@
 {
   "name": "utils-kit-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Add reusable utils to your project",
   "main": "index.js",
   "publishConfig": {
