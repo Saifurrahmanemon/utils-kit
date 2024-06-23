@@ -4,7 +4,7 @@ const path = require('path');
 
 const utilsDir = path.join(__dirname, '../src/utils');
 
-const outputFile = path.join(__dirname, 'utils.json');
+const outputFile = path.join(__dirname, '../public', 'registry.json');
 
 async function convertTsFilesToJson() {
   try {

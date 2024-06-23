@@ -8,7 +8,7 @@ export default defineConfig({
       name: 'json-server',
       configureServer(server) {
         server.middlewares.use('/registry', async (req, res) => {
-          const filePath = path.resolve(__dirname, 'script/utils.json');
+          const filePath = path.resolve(__dirname, 'public/registry.json');
           try {
             const data = await readFile(filePath, 'utf-8');
             res.setHeader('Content-Type', 'application/json');

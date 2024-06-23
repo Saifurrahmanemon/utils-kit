@@ -15,7 +15,7 @@ importers:
         specifier: ^19.2.2
         version: 19.2.2
       '@repo/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:packages/config-eslint
       '@types/eslint':
         specifier: ^8.56.10
@@ -57,10 +57,10 @@ importers:
   apps/web:
     devDependencies:
       '@repo/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../packages/config-eslint
       '@repo/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../packages/config-typescript
       eslint:
         specifier: ^8.57.0

@@ -30,8 +30,6 @@ export async function fetchRegistry() {
 export async function createDir(cwd: string) {
   const dirPath = path.join(cwd ?? process.cwd(), 'src', 'utils');
 
-  console.log(dirPath);
-
   if (!existsSync(dirPath)) {
     fs.mkdir(dirPath, { recursive: true });
     return {

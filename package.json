@@ -1,5 +1,4 @@
 {
-
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -14,7 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@repo/eslint-config": "workspace:*",
+    "@repo/eslint-config": "workspace:^",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.14.2",
     "@typescript-eslint/parser": "^7.1.0",
