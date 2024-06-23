@@ -1,5 +1,11 @@
 # utils-kit-cli
 
+## 1.2.0
+
+### Minor Changes
+
+- url fix
+
 ## 1.1.0
 
 ### Minor Changes
