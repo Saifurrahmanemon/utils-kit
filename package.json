@@ -11,6 +11,7 @@
     "release": "changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.5",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@repo/eslint-config": "workspace:^",
