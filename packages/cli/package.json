@@ -1,6 +1,6 @@
 {
   "name": "utils-kit-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add reusable utils to your project",
   "main": "index.js",
   "publishConfig": {
@@ -24,7 +24,8 @@
     "lint": "eslint src/**/*.{js,ts}",
     "format": "prettier --write src/**/*.{js,ts}",
     "release": "changeset version",
-    "pub:release": "pnpm build && pnpm publish --access public"
+    "pub:release": "pnpm build && pnpm publish --access public",
+    "pub:beta": "pnpm build && pnpm publish --no-git-checks --access public --tag beta"
   },
   "keywords": [
     "cli",

@@ -8,7 +8,8 @@
     "prepare": "husky",
     "test": "vitest",
     "pub:release": "cd packages/cli && pnpm pub:release",
-    "release": "changeset version"
+    "release": "changeset version",
+    "pub:beta": "cd packages/cli && pnpm pub:beta"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.5",

@@ -1,5 +1,11 @@
 # utils-kit-cli
 
+## 1.1.0
+
+### Minor Changes
+
+- url app type fix
+
 ## 1.0.0
 
 ### Major Changes
