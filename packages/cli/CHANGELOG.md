@@ -1,5 +1,11 @@
 # utils-kit-cli
 
+## 1.0.0
+
+### Major Changes
+
+- 463a359: deployed url
+
 ## 0.1.1
 
 ### Patch Changes
