@@ -2,7 +2,7 @@ import { existsSync, promises as fs } from 'fs';
 import path from 'path';
 import { z } from 'zod';
 
-const baseUrl = 'http://localhost:5173'; // TODO: add real base url
+const baseUrl = 'https://utils-kit.vercel.app'; // TODO: add dev url
 
 const itemSchema = z.object({
   name: z.string(),
