@@ -1,0 +1,60 @@
+{
+  "name": "utils-kit-cli",
+  "version": "1.2.0",
+  "description": "Add reusable utils to your project",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Saifur",
+    "url": "https://x.com/SaifurRahmanEm7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saifurrahmanemon/utils-kit",
+    "directory": "packages/cli"
+  },
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.{js,ts}",
+    "format": "prettier --write src/**/*.{js,ts}",
+    "release": "changeset version",
+    "pub:release": "pnpm build && pnpm publish --access public",
+    "pub:beta": "pnpm build && pnpm publish --no-git-checks --access public --tag beta"
+  },
+  "keywords": [
+    "cli",
+    "utils-kit",
+    "ts"
+  ],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": "./dist/index.js",
+  "bin": "./dist/index.js",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/diff": "^5.2.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "rimraf": "^5.0.7",
+    "tsup": "^8.1.0",
+    "type-fest": "^4.20.0",
+    "typescript": "^5.3.3",
+    "zod": "^3.23.8"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.1",
+    "prompts": "^2.4.2",
+    "tsconfig-paths": "^4.2.0"
+  }
+}

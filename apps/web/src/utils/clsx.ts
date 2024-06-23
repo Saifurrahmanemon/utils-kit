@@ -26,6 +26,7 @@
  *
  **/
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ClassObj = Record<string, any>;
 type ClassValue =
   | ClassArray

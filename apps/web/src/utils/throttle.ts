@@ -61,6 +61,7 @@ function throttle<T extends (...args: any[]) => any>(
 
     const remaining = wait - (time - lastInvokeTime);
     lastArgs = args;
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
     lastContext = this;
 
     if (remaining <= 0 || remaining > wait) {

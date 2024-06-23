@@ -1,49 +1,34 @@
 {
   "private": true,
-  "author": {
-    "name": "Saifur Rahman Emon"
-  },
-  "type": "module",
-  "license": "MIT",
   "scripts": {
-    "lint": "npx eslint --ext ts ./src",
-    "lint:fix": "npx eslint --ext ts ./src --fix",
-    "dev": "vite --host",
-    "test": "vitest",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky",
-    "format": "prettier --write ./src",
-    "check:types": "tsc --project tsconfig.json --pretty --noEmit"
+    "test": "vitest",
+    "pub:release": "cd packages/cli && pnpm pub:release",
+    "release": "changeset version",
+    "pub:beta": "cd packages/cli && pnpm pub:beta"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.2",
+    "@changesets/cli": "^2.27.5",
+    "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
+    "@repo/eslint-config": "workspace:^",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-promise": "^6.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.2.2",
+    "husky": "^9.0.11",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.9",
+    "turbo": "latest",
     "vitest": "^1.6.0"
   },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "pnpm lint",
-      "pnpm format"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "pnpm dlx commitlint --edit $1"
-    }
-  }
+  "packageManager": "pnpm@8.15.6",
+  "name": "utils-kit"
 }

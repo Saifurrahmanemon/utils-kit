@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 interface DebouncedFunction extends Function {
   cancel: () => void;
   flush: () => void;
@@ -46,6 +45,7 @@ export default function debounce<T extends (...args: any[]) => any>(
   };
 
   function debounced(this: ThisParameterType<T>, ...args: Parameters<T>) {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
     lastThis = this;
     lastArgs = args;
     clearTimer();

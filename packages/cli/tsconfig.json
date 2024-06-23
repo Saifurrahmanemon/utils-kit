@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../config-typescript/base.json",
+  "compilerOptions": {
+    "target": "es2017",
+    "isolatedModules": false,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/utils/registry.ts", "src/utils/run.js"],
+  "exclude": ["node_modules"]
+}

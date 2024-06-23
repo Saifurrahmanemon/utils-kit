@@ -1,4 +1,6 @@
 {
+  "extends": "@repo/typescript-config/vite.json",
+  "include": ["src", "script"],
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -14,18 +16,14 @@
       "es2020"
     ],
     "skipLibCheck": true,
-
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
-  },
-  "exclude": ["node_modules"],
-  "include": ["src", "test"]
+  }
 }
