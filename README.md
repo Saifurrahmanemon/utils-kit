@@ -2,7 +2,7 @@
 
 ## Overview
 
-Copy-paste ready, customizable, and dependency-free TypeScript utility functions that you can easily integrate into your projects. Free. Open Source. You can copy any utility of your choice from `apps/web/src/utils` or you can use `utils-kit-cli` to add any utility to your TypeScript project. Utilities will be available in the `/src/utils` directory.
+Customizable and dependency-free TypeScript utility functions that you can easily add to your projects. Free. Open Source. You can copy any utility of your choice from `apps/web/src/utils` or you can use `utils-kit-cli` to add any utility to your TypeScript project. Utilities will be available in the `/src/utils` directory.
 
 ## Installation
 
