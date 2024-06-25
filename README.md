@@ -1,34 +1,23 @@
-# `Turborepo` Vite starter
+# Utils-Kit
 
-This is an official starter Turborepo.
+## Overview
 
-## Using this example
+Copy-paste ready, customizable, and dependency-free TypeScript utility functions that you can easily integrate into your projects. Free. Open Source. You can copy any utility of your choice from `apps/web/src/utils` or you can use `utils-kit-cli` to add any utility to your TypeScript project. Utilities will be available in the `/src/utils` directory.
 
-Run the following command:
+## Installation
 
-```sh
-npx create-turbo@latest -e with-vite
+```bash
+npx utils-kit-cli add <utility name>
 ```
 
-## What's inside?
+Please refer to the [Available Utils](docs/available-utils.md) file to see all the current utilities. We plan to add more utilities in the future.
 
-This Turborepo includes the following packages and apps:
 
-### Apps and Packages
+## Contributing
 
-- `docs`: a vanilla [vite](https://vitejs.dev) ts app
-- `web`: another vanilla [vite](https://vitejs.dev) ts app
-- `@repo/ui`: a stub component & utility library shared by both `web` and `docs`
-  applications
-- `@repo/eslint-config`: shared `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+Please read the [contributing guide](docs/CONTRIBUTING.md).
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-### Utilities
+## License
 
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+[MIT license](https://github.com/Saifurrahmanemon/utils-kit/blob/master/LICENSE).
